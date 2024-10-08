@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/devol.css">
+    <script src="devolucion.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Registro de Devolucion</title>
+</head>
+<body>
+
+    <div class="container">
+    <br>
+    <h1>
+        Libreria.js
+    </h1>
+    <hr>
+     <label for="dni"><h3>Ingrese DNI:</h3></label>
+    <input type="number" name="" id="dniv">
+    <button id="btnDnib" class="btn btn-primary" onclick="validarDniDev()">Buscar</button>
+    <div id="Form2">
+        <label for="">Ingrese Fecha de Devolucion:</label>
+        <input type="date" name="" id="fechaDevolucion">
+        <button id="btnDnis" class="btn btn-primary" onclick="registrarDevolucion()">guardar</button>
+    </div>
+    <hr>
+    <p class="list-libros" id="libro"></p>
+    <br>
+    <a class="volver" href="index.html"><span>Volver a inicio</span></a>
+    </div>
+ 
+</body>
+</html>

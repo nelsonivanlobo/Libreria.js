@@ -1,0 +1,28 @@
+body {
+    background-image: url("/img/fondo2.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+input{
+    margin: 5px;
+}
+
+span{
+    background-color: wheat;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+span:hover{
+    background-color: rgb(33, 120, 25);
+    color: white;
+}
+
+.volver{
+    text-decoration: none;
+}

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+main{
+    background-image: url("/img/libro.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#conteiner-all {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgb(43, 152, 148);
+    padding: 15px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    height: 35px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li a {
+    text-decoration: none;
+}
+
+.navigation h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.navigation h3:hover {
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.826);
+    border-radius: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+}
+
+main {
+    flex: 1;
+    padding: 17px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: wheat;
+    font-weight: bold;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.redes-footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.redes-footer img:hover {
+    background-color: #555;
+    border-radius: 50%;
+}

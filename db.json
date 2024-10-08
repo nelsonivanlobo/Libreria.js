@@ -1,0 +1,75 @@
+{
+  "Libros": [
+    {
+      "titulo": "Harry Potter",
+      "autor": "J.K. Rolling",
+      "genero": "Ciencia ficcion y Fantasia",
+      "id": "1"
+    },
+    {
+      "titulo": "El alquimista",
+      "autor": "Paulo Coelho",
+      "genero": "Aventura",
+      "id": "2"
+    },
+    {
+      "titulo": "El señor de los Anillos",
+      "autor": "J.R. Tolkien",
+      "genero": "Ciencia ficcion y Fantasia",
+      "id": "3"
+    }
+  ],
+  "Alumnos": [
+    {
+      "nombre": "Nelson",
+      "dni": "123456789",
+      "direccion": "Famaillá",
+      "institucion": "UTN-FRT",
+      "id": "1"
+    },
+    {
+      "nombre": "Ivan",
+      "dni": "987654321",
+      "direccion": "San Miguel",
+      "institucion": "UTN-FRT",
+      "id": "2"
+    }
+  ],
+  "Permisos": [
+    {
+      "fechaPrestamo": "2024-07-16",
+      "fechaDevolución": "2024-09-24",
+      "idAlumnos": 2,
+      "idLibros": 2,
+      "id": "1"
+    },
+    {
+      "fechaPrestamo": "2023-12-10",
+      "fechaDevolución": "2024-10-10",
+      "idAlumnos": 1,
+      "idLibros": 2,
+      "id": "2"
+    },
+    {
+      "id": "261a",
+      "fechaPrestamo": "2024-09-02",
+      "fechaDevolución": "",
+      "idAlumnos": "1",
+      "idLibros": 1
+    },
+    {
+      "id": "4ba0",
+      "fechaPrestamo": "2024-09-09",
+      "fechaDevolución": "",
+      "idAlumnos": "2",
+      "idLibros": 2
+    },
+    {
+      "id": "2e68",
+      "fechaPrestamo": "2024-10-07",
+      "fechaDevolución": "",
+      "idAlumnos": "1",
+      "idLibros": 3
+    }
+  ]
+}

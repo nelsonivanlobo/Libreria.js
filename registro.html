@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="registro.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Registro de prestamo</title>
+</head>
+<body>
+    <div class="container">
+        <main><br>
+            <h1>
+                Libreria.js
+            </h1>
+            <hr>
+            <label for="dni"><h4>Ingrese DNI:</h4></label>
+            <input type="number" name="" id="dniv">
+            <button id="btnDni" class="btn btn-primary" onclick="validarDni()">Buscar</button>
+            
+            <div id="Formulario">
+                <label for="libro"><h4>Seleccione Libro:</h4></label>
+                <input type="number" id="libro">
+                <label for="fecha">Fecha Prestamo:</label>
+                <input type="date" name="" id="fechaEntrega">
+                <button id="btnPresta "onclick="registrarPrestamo()">Prestar</button>
+            </div>
+            <hr>
+            <br>
+            <a class="volver" href="index.html"><span>Volver a inicio</span></a>
+        </main>
+    </div>
+   
+</body>
+</html>

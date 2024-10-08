@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/alum.css">
+    <script src="alumnos.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+
+            <div id="titular">
+                <br>
+                <h1>Libreria.js</h1>
+                <hr>
+                <h3>Ingrese el Nombre del Alumno</h3>
+                <input type="text" id="nombre" placeholder="Apellido y Nombre">
+                <label for="dnialum">Dni</label>
+                <input type="number" id="dni" placeholder="Ingrese el dni">
+              
+                <label for="">Direccion:</label>
+                <input type="text" name="" id="addres">
+                <label for="alumInst">Institucion</label>
+                <select name="institucion" id="inst">
+                    <option value="UTN-FRT">UTN-FRT</option>
+                    <option value="UNT">UNT</option>
+                </select>
+                <button id="grd" class="btn btn-primary" onclick="guardarAlumnos()"> Guardar</button>
+                <button id="act" class="btn btn-primary" onclick="actualizar()"> Actualizar</button>
+                <br>
+                <hr>
+                <div id="listAlum"></div>
+                
+                
+            </div>
+            <br>
+            <a class="volver" class="volver" href="index.html"><span>Volver a inicio</span></a>
+        </main>
+    </div>
+    
+</body>
+</html>
