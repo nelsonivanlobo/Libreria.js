@@ -8,15 +8,9 @@ const btnGrd=document.getElementById("grd")
 btnAct.hidden= true
 let valido=true;
 
-listar()
-async function guardar() {
-    try {
-        resp = await axios.post("http://localhost:3000/Libros", {titulo: titulo.value, autor: autor.value, genero: genero.value})
-    }
-    catch {
-        alert("No se guardaron los datos correctamente")
-    }
-}
+listar() //se pone listar antes que lo demas para que sea lo primero que haga el codigo al cargar
+// la pagina y de esa manera ver lo que hay. recordar que el codigo se lee de arriba a abajo.
+
 
 async function listar() {
     resp = await axios.get("http://localhost:3000/Libros")
@@ -29,23 +23,6 @@ async function listar() {
     });
 }
 
-async function borrar(id) {
-    let respaldo=id;
-    resp = await axios.get("http://localhost:3000/Permisos")
-    resp.data.forEach(element => {
-        if (element.idLibros == respaldo) {
-            valido=false
-        }
-    })
-    if (valido == true) {
-        await axios.delete("http://localhost:3000/Libros/" + id);
-    }
-    else if (valido == false) {
-        alert("No se puede eliminar un libro ya prestado")
-        valido=true;
-        
-    }
-}
 
 async function editar(id) {
     btnAct.hidden=false   

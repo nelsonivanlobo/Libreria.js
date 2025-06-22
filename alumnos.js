@@ -12,7 +12,12 @@ let valido=true;
 
 async function guardarAlumnos() {
     try{
-        resp = await axios.post("http://localhost:3000/Alumnos", {nombre: nombre.value, dni: dni.value, direccion: direccion.value, institucion: institucion.value})
+        resp = await axios.post("http://localhost:3000/Alumnos", {
+            nombre: nombre.value, 
+            dni: dni.value, 
+            direccion: direccion.value, 
+            institucion: institucion.value
+        })
         
     }
     catch{
@@ -51,10 +56,10 @@ async function borrarAlum(id) {
     }
 }
 
-async function editar(id) {
+async function editar(id) { /* uso una variable que luego necesitare en actualizar */
     btnAct.hidden=false
     btnGrd.hidden=true
-    auxiliar=id
+    auxiliar=id  /* guarda temporalmente el id del alumno */
     resp = await axios.get("http://localhost:3000/Alumnos/" + id)
     nombre.value = resp.data.nombre
     dni.value = resp.data.dni
@@ -65,5 +70,10 @@ async function editar(id) {
 async function actualizar() {
     btnAct.hidden= true
     btnGrd.hidden= false
-    resp = await axios.put("http://localhost:3000/Alumnos/" + auxiliar, {nombre: nombre.value, dni: dni.value, direccion: direccion.value, institucion: institucion.value})
+    resp = await axios.put("http://localhost:3000/Alumnos/" + auxiliar, {
+        nombre: nombre.value, 
+        dni: dni.value, 
+        direccion: direccion.value, 
+        institucion: institucion.value
+    })
 }
